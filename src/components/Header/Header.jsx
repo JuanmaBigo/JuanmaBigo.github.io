@@ -14,7 +14,7 @@ export default function Header() {
                     <img className='menu-logo' src='/menu-logo.png' onClick={toggle}></img>
                 </div>
                 <Link to='/' className='logo-juanma'>
-                    <img src='/logo-juanmaa.png' />
+                    <img src='/logo-juanma.png' />
                 </Link>
                 <div className='header-links'>
                     <Link to='/' className='link'>Home</Link>
@@ -30,7 +30,6 @@ export default function Header() {
                         <Link to='/About' className='link'>About</Link>
                         <Link to='/Projects' className='link'>Projects</Link>
                         <Link to='/Contact' className='link'>Contact</Link>
-                    {/* <img className='menu-logo' src='/menu-logo.png' onClick={toggle}></img> */}
                 </div>
             }
         </div>
