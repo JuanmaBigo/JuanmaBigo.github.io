@@ -7,6 +7,9 @@ export const router = (
         <Routes>
             <Route path="/" element={<MainLayout />}>
                 <Route path="/" element={<Home />} />
+                <Route path="About" element={<Home />} />
+                <Route path="Contact" element={<Home />} />
+                <Route path="Projects" element={<Home />} />
             </Route>
         </Routes>
 );
