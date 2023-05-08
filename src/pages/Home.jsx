@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div>Home Page content</div>
+        <div>
+            <div>Home Page content</div>
+            {/* <About/>
+            <Projects/> */}
+        </div>
     )
 }
