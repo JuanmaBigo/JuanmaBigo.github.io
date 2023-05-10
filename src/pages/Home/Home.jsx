@@ -5,7 +5,7 @@ import juanma from '/juanma-photo.png'
 export default function Home() {
     return (
         <div className='home'>
-            <section className='home-about-section'>
+            <section className='home-main-section'>
             <div className='text-box'>
                 <h3>Hey There!</h3>
                 <h4>I'm Juanma</h4>
