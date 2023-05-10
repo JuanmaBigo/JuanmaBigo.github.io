@@ -8,7 +8,7 @@
     background: linear-gradient(240.55deg, #8349FF 10.59%, rgba(53, 100, 220, 0.586563) 111.19%);
 }
 
-.home-about-section {
+.home-main-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -17,23 +17,23 @@
     padding: 0 5rem;
 }
 
-.home-about-section .text-box {
+.home-main-section .text-box {
     width: 30rem;
     color: white;
 }
 
-.home-about-section .text-box h1,
-.home-about-section .text-box h4 {
+.home-main-section .text-box h1,
+.home-main-section .text-box h4 {
     font-size: 2rem;
     font-weight: 500;
 }
 
-.home-about-section .text-box h3 {
+.home-main-section .text-box h3 {
     font-size: 2.2rem;
     font-weight: 700;
 }
 
-.home-about-section img {
+.home-main-section img {
     width: 30rem;
     height: 30rem;
     object-fit: contain;
@@ -41,28 +41,28 @@
 
 @media screen and (max-width: 768px) {
 
-    .home-about-section {
+    .home-main-section {
         flex-direction: column;
         gap: 2rem;
         padding: 0 1rem;
         margin-bottom: 3rem;
     }
 
-    .home-about-section .text-box {
+    .home-main-section .text-box {
         width: 100%;
         text-align: center;
     }
 
-    .home-about-section .text-box h1,
-    .home-about-section .text-box h4 {
+    .home-main-section .text-box h1,
+    .home-main-section .text-box h4 {
         font-size: 1.5rem;
     }
 
-    .home-about-section .text-box h3 {
+    .home-main-section .text-box h3 {
         font-size: 1.8rem;
     }
 
-    .home-about-section img {
+    .home-main-section img {
         width: 100%;
         height: 50vh;
     }
