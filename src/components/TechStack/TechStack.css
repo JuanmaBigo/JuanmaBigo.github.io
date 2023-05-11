@@ -1,0 +1,27 @@
+.skill{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.skill img{
+    width: 2.5rem;
+    height: 2.2rem;
+    object-fit: contain;
+}
+
+.skill h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.tech-stack{
+    padding: 0 2rem 5rem ;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}

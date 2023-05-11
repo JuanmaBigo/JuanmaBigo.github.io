@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import juanma from '/juanma-photo.png'
+import TechStack from '../../components/TechStack/TechStack'
 
 export default function Home() {
     return (
@@ -14,8 +15,9 @@ export default function Home() {
                 <img className='' src={juanma}/>
             </section>
 
-            {/* <About/>
-            <Projects/> */}
+            <TechStack/>
+
+            {/* <Projects/> */}
         </div>
     )
 }
