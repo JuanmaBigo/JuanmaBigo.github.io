@@ -32,5 +32,21 @@
     transform: scale(1.05);
     transition: all 0.5s ease-in-out;
     opacity: 0.8;
+}
 
+.project h3{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+.projects-section h2{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 0.5rem 0 0.5rem 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
 }
