@@ -4,7 +4,7 @@ import Skill from './Skill'
 export default function TechStack() {
     return (
         <section className='tech-stack-container'>
-            <h2>Tech Stack</h2>
+            <h2>{`<Tech Stack/>`} </h2>
             <div className='tech-stack'>
                 <Skill name={'JavaScript'} logo={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png'} />
                 <Skill name={'React'} logo={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'} />
@@ -19,9 +19,10 @@ export default function TechStack() {
                 <Skill name={'JWT'} logo={'https://jwt.io/img/icon.svg'} />
                 <Skill name={'Git'} logo={'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png'} />
                 <Skill name={'GitHub'} logo={'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'} />
-                <Skill name={'Postman'} logo={'https://cdn.worldvectorlogo.com/logos/postman.svg'} />
-                <Skill name={'Figma'} logo={'https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png'} />
+                <Skill name={'Postman'} logo={'https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png'} />
+                <Skill name={'Figma'} logo={'https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.png'} />
                 <Skill name={'Canva'} logo={'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/2048px-Canva_icon_2021.svg.png'} />
+                <Skill name={'Coming Soon...'} logo={'https://www.freepnglogos.com/uploads/thinking-png/brain-head-insight-mind-think-thinking-icon-15.png'} />
             </div>
         </section>
     )
