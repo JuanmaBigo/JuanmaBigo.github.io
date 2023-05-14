@@ -1,3 +1,7 @@
+.projects-section{
+    width: 100%;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +14,6 @@
 }
 
 .project img {
-    height: 196.88px;
     width: 350px;
     object-fit: cover;
     border-radius: 5px;
@@ -67,3 +70,15 @@
     width: 100%;
     margin-bottom: 2rem;
 }
+
+/* 
+@media screen and (max-width: 420px) {
+    .project img {
+        width: 85vw;
+        height: auto;
+    }
+
+    .projects {
+        padding: 0;
+    }
+} */

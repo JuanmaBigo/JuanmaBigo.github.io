@@ -5,20 +5,17 @@ import webLogo from '/web-logo.png'
 
 export default function Project({ name, linkRepo, linkHost, img }) {
     const card = useRef()
-    const [state, setState] = useState(false)
     const [scale, setScale] = useState(1)
     const [transition, setTransition] = useState(0.5)
     const [linksDisplay, setLinksDisplay] = useState(0)
 
 
     const handleMouseEnter = () => {
-        setState(true)
         setScale(1.05)
         setTransition(0.5)
         setLinksDisplay(1)
     }
     const handleMouseLeave = () => {
-        setState(false)
         setScale(1)
         setTransition(0.5)
         setLinksDisplay(0)
