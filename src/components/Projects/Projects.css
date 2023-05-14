@@ -1,3 +1,7 @@
+.projects-section{
+    width: 100%;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -10,10 +14,9 @@
 }
 
 .project img {
-    height: 196.88px;
     width: 350px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .project-link{
@@ -27,7 +30,7 @@
 
 .project-link a{
     text-decoration: none;
-    color: white;
+    color: rgb(184, 184, 184);
     background-color: rgba(0, 0, 0, 0.685);
     font-family: 'Source Code Pro', monospace;
     padding: 0.2rem 1rem;
@@ -36,7 +39,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.288);
+    box-shadow: 0 0 1px 1px rgba(73, 73, 73, 0.288);
 }
 
 .project-link a img{
@@ -46,8 +49,8 @@
 }
 
 .project-link a:hover{
-    background-color: rgba(63, 49, 117, 0.8);
-    
+    background-color: rgba(44, 35, 83, 0.877);
+    color: white;
 }
 
 
@@ -67,3 +70,15 @@
     width: 100%;
     margin-bottom: 2rem;
 }
+
+/* 
+@media screen and (max-width: 420px) {
+    .project img {
+        width: 85vw;
+        height: auto;
+    }
+
+    .projects {
+        padding: 0;
+    }
+} */
