@@ -39,8 +39,8 @@ export default function Project({ name, linkRepo, linkHost, img }) {
             <img src={img} />
             <h3>{name}</h3>
             <div className='project-link' style={stylesLinks}>
-                <a href={linkRepo}><img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' /><p>REPO</p></a>
                 <a href={linkHost}><img src={webLogo} /><p>LIVE</p></a>
+                <a href={linkRepo}><img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' /><p>REPO</p></a>
             </div>
 
         </div>
