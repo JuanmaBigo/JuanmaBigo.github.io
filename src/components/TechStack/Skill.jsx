@@ -11,7 +11,7 @@ export default function Skill({logo, name}) {
     const handleMouseEnter = () => {
         const randomColor = Math.floor(Math.random()*16777215).toString(16);
         setColor(`#${randomColor}`)
-        setTransition(0.2)
+        setTransition(0.1)
     }
     const handleMouseLeave = () => {
         setColor('transparent')
