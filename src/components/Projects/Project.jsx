@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import './Projects.css'
 import webLogo from '/web-logo.png'
 
-export default function Project({ name, linkRepo, linkHost, img }) {
+export default function Project({ name, linkRepo, linkHost, img, projectMobile }) {
     const card = useRef()
     const [scale, setScale] = useState(1)
     const [transition, setTransition] = useState(0.5)
@@ -32,7 +32,7 @@ export default function Project({ name, linkRepo, linkHost, img }) {
     }
 
     return (
-        <div className='project' ref={card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={styles}>
+        <div className={!projectMobile? 'project' : 'project project-mobile'} ref={card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={styles}>
             <img src={img} />
             <h3>{name}</h3>
             <div className='project-link' style={stylesLinks}>
