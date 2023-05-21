@@ -1,2 +1,2 @@
 ## This is my portfolio page 
-It will be coded in ReactJS
+Builded in ReactJS with vite
