@@ -1,0 +1,38 @@
+.footer-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1B1A3C;
+    padding: 0 2.5rem;
+}
+
+.social-container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-logo{
+    width: 30px;
+    height: 30px;
+}
+
+.social-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.social-container img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    background-color: color-mix(in oklab, #464549, #313131 45%);
+}
+
+.footer-container p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
