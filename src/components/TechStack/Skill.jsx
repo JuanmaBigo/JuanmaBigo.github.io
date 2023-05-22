@@ -2,14 +2,13 @@ import React, {useRef, useState} from 'react'
 import './TechStack.css'
 
 export default function Skill({logo, name}) {
-    // cambiar color cada vez que se hace hover
     const skill = useRef()
     const [color, setColor] = useState('')
     const [transition, setTransition] = useState(0)
 
 
     const handleMouseEnter = () => {
-        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        const randomColor = Math.floor(Math.random()*16777215).toString(16); //generates random color
         setColor(`#${randomColor}`)
         setTransition(0.1)
     }
@@ -20,7 +19,7 @@ export default function Skill({logo, name}) {
 
 
     const styles = {
-        backgroundColor: color,
+        backgroundColor: `color-mix(in oklab, #8467F8, ${color} 65%)`, // mix color with base background color
         transition: `background-color ${transition}s ease-out`,
     }
 
