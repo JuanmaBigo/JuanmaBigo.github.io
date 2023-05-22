@@ -14,17 +14,17 @@
 }
 
 .social-logo{
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
 }
 
-.social-container img{
+.social-logo-img{
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-.social-container img:hover{
+.social-logo-img:hover{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
