@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-
+import { Link } from 'react-router-dom'
 import './Projects.css'
 import webLogo from '/web-logo.png'
 
@@ -31,15 +31,17 @@ export default function Project({ name, linkRepo, linkHost, img, projectMobile }
         transform: `scale(${linksDisplay})`
     }
 
+    // on click save the project details in the store
     return (
-        <div className={!projectMobile? 'project' : 'project project-mobile'} ref={card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={styles}>
-            <img src={img} />
-            <h3>{name}</h3>
-            <div className='project-link' style={stylesLinks}>
-                <a href={linkHost}><img src={webLogo} /><p>LIVE</p></a>
-                <a href={linkRepo}><img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' /><p>REPO</p></a>
+        <Link to={`/projects/${name}`}>
+            <div className={!projectMobile ? 'project' : 'project project-mobile'} ref={card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={styles}>
+                <img src={img} />
+                <h3>{name}</h3>
+                <div className='project-link' style={stylesLinks}>
+                    <a href={linkHost}><img src={webLogo} /><p>LIVE</p></a>
+                    <a href={linkRepo}><img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' /><p>REPO</p></a>
+                </div>
             </div>
-
-        </div>
+        </Link>
     )
 }
