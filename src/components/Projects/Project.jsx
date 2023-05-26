@@ -39,7 +39,6 @@ export default function Project({ name, linkRepo, linkHost, img, projectMobile }
                 <a href={linkHost}><img src={webLogo} /><p>LIVE</p></a>
                 <a href={linkRepo}><img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' /><p>REPO</p></a>
             </div>
-
         </div>
     )
 }

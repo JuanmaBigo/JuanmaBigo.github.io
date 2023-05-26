@@ -23,7 +23,7 @@ export default function Footer() {
                 </Link>
             </div>
             <p>
-                © 2021 Juan Mateo Bigoritto
+                © 2023 Juan Mateo Bigoritto
             </p>
         </div>
     )
