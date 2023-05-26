@@ -18,7 +18,8 @@ export default function Header() {
                 </Link>
                 <div className='header-links'>
                     <Link to='/' className='link'>Home</Link>
-                    {/* <Link to='/About' className='link'>About</Link>
+                    <Link to='/About' className='link'>About</Link>
+                    {/*
                     <Link to='/Projects' className='link'>Projects</Link>
                     <Link to='/Contact' className='link'>Contact</Link> */}
                     
@@ -28,8 +29,8 @@ export default function Header() {
             {
                 isOpen && <div className='menu-mobile'>
                         <Link to='/' className='link'>Home</Link>
-                        {/* <Link to='/About' className='link'>About</Link>
-                        <Link to='/Projects' className='link'>Projects</Link>
+                        <Link to='/About' className='link'>About</Link>
+                        {/* <Link to='/Projects' className='link'>Projects</Link>
                         <Link to='/Contact' className='link'>Contact</Link> */}
                 </div>
             }

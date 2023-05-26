@@ -8,6 +8,5 @@ export default function ProjectDetails() {
 
     return (
         <div>{name}</div>
-
     )
 }
