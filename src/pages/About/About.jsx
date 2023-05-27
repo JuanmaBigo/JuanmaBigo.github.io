@@ -6,9 +6,10 @@ export default function About() {
     return (
         <div className='about-page'>
             <h2>{`<About me/>`}</h2>
-            <section>
+            <section className='about-page'>
             <div className='description'>
-                <p>I'm Juanma! I'm 21 years old and I'm a MERN Full Stack Developer. I'm passionate for tech since i got my first smartphone at 10, since then I started reading and investigating all about the tech world. </p>
+                <p>I'm Juanma! I'm 21 years old and I'm a MERN Full Stack Developer. </p>
+                <p>I'm passionate for tech since i got my first smartphone at 10, since then I started reading and investigating all about the tech world. </p>
                 <br></br>
                 <p>I got experience working primarily in MongoDB, ExpressJS, ReactJS and NodeJS, also React Native for creating mobile apps. I learned the logic of programming in C++ when I took an Object Oriented Programming course at University among other important courses such as Sofware Engineering and worked on different real world projects, both individually and groupally using Agile methodologies in day to day work.</p>
                 <br></br>
