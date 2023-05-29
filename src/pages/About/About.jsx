@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className='about-page'>
             <h2>{`<About me/>`}</h2>
-            <section className='about-page'>
+            <section className='about-section'>
             <div className='description'>
                 <p>I'm Juanma! I'm 21 years old and I'm a MERN Full Stack Developer. </p>
                 <p>I'm passionate for tech since i got my first smartphone at 10, since then I started reading and investigating all about the tech world. </p>
@@ -19,11 +19,10 @@ export default function About() {
                 <p>If you are looking for a developer with my characteristics and values, have no doubt in reaching me</p>
             </div>
             <div className='gallery'>
-            <img src={img1}></img>
+            <img src={img1}/>
                 {/* add carousel here */}
             </div>
-            </section>
-            
+            </section>             
         </div>
     )
 }
