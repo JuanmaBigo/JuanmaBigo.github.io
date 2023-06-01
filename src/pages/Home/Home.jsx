@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import juanma from '/juanma-photo.png'
+import juanma from '/juanma-photo2.png'
 import TechStack from '../../components/TechStack/TechStack'
 import Projects from '../../components/Projects/Projects'
 

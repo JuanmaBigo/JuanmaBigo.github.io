@@ -69,17 +69,19 @@
     
 }
 
-.projects-section h2{
+.projects-section h2 {
     font-family: 'Source Code Pro', monospace;
     font-size: 2.1rem;
-    font-weight: 300;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.685);
+    /* font-weight: 300; */
+    /* color: white; */
+    /* background-color: rgba(0, 0, 0, 0.685); */
+    font-weight: 500;
+    color: black;
+    background-color: whitesmoke;
     padding: 0.5rem 0 0.8rem 3rem;
     width: 100%;
     margin-bottom: 2rem;
 }
-
 
 @media screen and (max-width: 420px) {
     .project img {
