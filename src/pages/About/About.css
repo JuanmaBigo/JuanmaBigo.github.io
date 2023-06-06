@@ -1,10 +1,12 @@
 .about-page {
     min-height: 80vh;
     width: 100%;
-    background: linear-gradient(240.55deg, #8349FF 10.59%, rgba(53, 100, 220, 0.586563) 111.19%);
+    /* background: linear-gradient(240.55deg, #8349FF 10.59%, rgba(53, 100, 220, 0.586563) 111.19%); */
+    background: linear-gradient(240.55deg, #8349FF 10.59%, rgba(53, 100, 220, 0.801) 111.19%);
     /* background: black; */
     color: white;
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .about-page h2{
@@ -32,6 +34,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.roadmap{
+    max-height: 60vh;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.roadmap-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1280px) {
