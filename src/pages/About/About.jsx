@@ -5,7 +5,7 @@ import img1 from '/img-1.jpg'
 export default function About() {
     return (
         <div className='about-page'>
-            <h2>{`<About me/>`}</h2>
+            <h2 className='title-h2'>{`<About me/>`}</h2>
             <section className='about-section'>
             <div className='description'>
                 <p>I'm Juanma! I'm 21 years old and I'm a MERN Full Stack Developer. </p>

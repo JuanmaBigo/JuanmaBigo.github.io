@@ -36,21 +36,8 @@
     margin: 2rem 0;
 }
 
-.tech-stack-container h2 {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 2.1rem;
-    /* font-weight: 300; */
-    /* color: white; */
-    /* background-color: rgba(0, 0, 0, 0.685); */
-    font-weight: 500;
-    color: black;
-    background-color: whitesmoke;
-    padding: 0.5rem 0 0.8rem 3rem;
-    width: 100%;
-}
-
 @media screen and (max-width: 768px) {
-    .tech-stack-container h2 {
+    .title-h2 {
         padding: 0.5rem;
         text-align: center;
     }
