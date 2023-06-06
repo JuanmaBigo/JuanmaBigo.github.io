@@ -4,7 +4,7 @@ import Skill from './Skill'
 export default function TechStack() {
     return (
         <section className='tech-stack-container'>
-            <h2>{`<TechStack/>`} </h2>
+            <h2 className='title-h2'>{`<TechStack/>`} </h2>
             <div className='tech-stack'>
                 <Skill name={'JavaScript'} logo={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png'} />
                 <Skill name={'React'} logo={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'} />
