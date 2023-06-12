@@ -11,6 +11,7 @@ export const router = (
                 <Route path="/" element={<Home />} />
                 <Route path="About" element={<About />} />
                 <Route path="Projects" element={<ProjectsPage />} />
+                {/* <Route path="Contact" element={<ContactPage />} /> */}
             </Route>
         </Routes>
 );
