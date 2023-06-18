@@ -37,10 +37,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .title-h2 {
-        padding: 0.5rem;
-        text-align: center;
-    }
 
     .skill {
         gap: 0.5rem;
