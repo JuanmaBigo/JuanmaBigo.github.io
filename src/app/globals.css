@@ -15,8 +15,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+  /* Lenis handles all scrolling */
 }
 
 body {
@@ -75,7 +74,6 @@ body {
 }
 
 /* Scroll offset para secciones (navbar flotante) */
-section[data-smart-snap="true"] {
-  scroll-snap-align: start;
+section {
 }
 
