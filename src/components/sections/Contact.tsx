@@ -26,10 +26,10 @@ export function Contact() {
           className="max-w-3xl mx-auto"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
-            Let's Build Something Great
+            Let&apos;s Build Something Great
           </h2>
           <p className="text-xl text-gray-400 mb-12">
-            Open to exciting opportunities, collaborations, and challenging projects. Let's connect and create something amazing together.
+            Open to exciting opportunities, collaborations, and challenging projects. Let&apos;s connect and create something amazing together.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
