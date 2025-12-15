@@ -5,8 +5,8 @@ import { Download, Linkedin, Github, Instagram } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 const roles = [
-  'Backend Engineer',
   'Software Developer', 
+  'Backend Engineer',
   'Problem Solver'
 ]
 
