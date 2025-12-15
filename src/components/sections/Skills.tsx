@@ -25,7 +25,7 @@ const skills = [
   // Core Languages
   { name: 'Golang', icon: Binary, category: 'Languages', color: '#00ADD8' },
   { name: 'Python', icon: FileCode, category: 'Languages', color: '#3776AB' },
-  { name: 'Node.js', icon: Server, category: 'Languages', color: '#339933' },
+  { name: 'JavaScript', icon: Code2, category: 'Languages', color: '#F7DF1E' },
   { name: 'SQL', icon: Database, category: 'Languages', color: '#4479A1' },
   
   // Backend Architecture
@@ -126,14 +126,14 @@ export function Skills() {
       data-nav-theme="skills"
       className="min-h-screen flex items-center justify-center bg-white py-20"
     >
-      <div className="container mx-auto px-6 lg:px-20 max-w-7xl w-full">
+      <div className="container mx-auto px-6 lg:px-20 max-w-7xl w-full pt-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="mb-12 text-center"
+          className="mb-8 text-center"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-black mb-4 tracking-tight">
             Tech Stack
@@ -144,7 +144,7 @@ export function Skills() {
         </motion.div>
         
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto mb-8">
           {skills.map((skill, index) => (
             <SkillCard key={skill.name} skill={skill} index={index} />
           ))}
