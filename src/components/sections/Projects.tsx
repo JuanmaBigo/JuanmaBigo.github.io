@@ -70,39 +70,37 @@ export function Projects() {
       id="projects" 
       data-nav-theme="projects"
       data-smart-snap="true"
-      className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center relative overflow-hidden pt-5"
+      className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 md:flex md:items-center md:justify-center relative overflow-hidden py-16 md:py-0 md:pt-5"
     >
       <div className="container mx-auto px-6 lg:px-20 max-w-7xl w-full">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-10 text-center pt-16"
-        >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
-            Selected Work
-          </h2>
-        </motion.div>
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-8 sm:mb-10 text-center pt-12 sm:pt-16"
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+              Selected Work
+            </h2>
+          </motion.div>
 
         {/* Carousel */}
-        <div className="relative min-h-[500px] md:min-h-[400px]">
-          <AnimatePresence initial={false} custom={direction}>
+        <div className="relative min-h-fit md:min-h-[400px]">
+          <AnimatePresence initial={false} mode="wait">
             <motion.div
               key={currentIndex}
-              custom={direction}
-              initial={{ opacity: 0, x: direction * 300 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: direction * -300 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ 
-                duration: 0.6, 
-                ease: [0.16, 1, 0.3, 1],
-                opacity: { duration: 0.4 }
+                duration: 0.5, 
+                ease: [0.16, 1, 0.3, 1]
               }}
-              className="absolute inset-0 grid md:grid-cols-2 gap-8 md:gap-12 items-center"
+              className="md:absolute md:inset-0 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start md:items-center"
             >
               {/* Image */}
-              <div className="relative aspect-[4/3] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border border-white/10">
+              <div className="relative aspect-video md:aspect-[4/3] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border border-white/10">
                 <Image
                   src={currentProject.image}
                   alt={currentProject.title}
@@ -114,15 +112,15 @@ export function Projects() {
               </div>
 
               {/* Content */}
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 <div>
-                  <span className="text-sm font-medium text-gray-500 tracking-wider uppercase">
+                  <span className="text-xs sm:text-sm font-medium text-gray-500 tracking-wider uppercase">
                     Project {String(currentIndex + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="text-4xl md:text-5xl font-bold text-white mt-2 mb-4 tracking-tight">
+                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2 mb-3 md:mb-4 tracking-tight">
                     {currentProject.title}
                   </h3>
-                  <p className="text-base md:text-lg text-gray-400 leading-relaxed font-light">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed font-light">
                     {currentProject.description}
                   </p>
                 </div>
@@ -140,27 +138,27 @@ export function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-3 pt-4">
+                <div className="flex gap-2 sm:gap-3 pt-2 md:pt-4">
                   <motion.a
                     href={currentProject.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-all text-sm"
+                    className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-all text-xs sm:text-sm"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <ExternalLink size={16} />
+                    <ExternalLink size={14} className="sm:w-4 sm:h-4" />
                     <span>View Project</span>
                   </motion.a>
                   <motion.a
                     href={currentProject.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-3 border border-white/30 text-white rounded-full font-medium hover:border-white hover:bg-white/10 transition-all text-sm"
+                    className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 border border-white/30 text-white rounded-full font-medium hover:border-white hover:bg-white/10 transition-all text-xs sm:text-sm"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Github size={16} />
+                    <Github size={14} className="sm:w-4 sm:h-4" />
                     <span>Code</span>
                   </motion.a>
                 </div>
