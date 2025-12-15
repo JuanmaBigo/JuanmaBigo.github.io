@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -74,7 +75,7 @@ body {
 }
 
 /* Scroll offset para secciones (navbar flotante) */
-section {
-  scroll-margin-top: 100px;
+section[data-smart-snap="true"] {
+  scroll-snap-align: start;
 }
 

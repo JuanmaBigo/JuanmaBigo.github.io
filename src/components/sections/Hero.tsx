@@ -25,6 +25,7 @@ export function Hero() {
       id="hero" 
       data-nav-theme="hero"
       className="h-screen flex items-center justify-center bg-white relative pt-16"
+      style={{ scrollSnapAlign: 'none' }}
     >
       <div className="container mx-auto px-6 lg:px-20 max-w-7xl">
         

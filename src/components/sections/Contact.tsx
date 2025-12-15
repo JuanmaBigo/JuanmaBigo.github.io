@@ -15,6 +15,7 @@ export function Contact() {
       id="contact" 
       data-nav-theme="contact"
       className="min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-black to-gray-900 pt-32 pb-20"
+      style={{ scrollSnapAlign: 'none' }}
     >
       <div className="container mx-auto px-6 lg:px-12 text-center">
         <motion.div

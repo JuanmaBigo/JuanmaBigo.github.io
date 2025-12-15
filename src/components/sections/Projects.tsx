@@ -69,7 +69,8 @@ export function Projects() {
     <section 
       id="projects" 
       data-nav-theme="projects"
-      className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center relative overflow-hidden pt-20 pb-24"
+      data-smart-snap="true"
+      className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center relative overflow-hidden pt-5"
     >
       <div className="container mx-auto px-6 lg:px-20 max-w-7xl w-full">
         {/* Header */}
@@ -77,7 +78,7 @@ export function Projects() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-10 text-center pt-8"
+          className="mb-10 text-center pt-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
             Selected Work

@@ -124,16 +124,17 @@ export function Skills() {
     <section 
       id="skills" 
       data-nav-theme="skills"
-      className="min-h-screen flex items-center justify-center bg-white py-20"
+      data-smart-snap="true"
+      className="h-screen flex items-center justify-center bg-white"
     >
-      <div className="container mx-auto px-6 lg:px-20 max-w-7xl w-full pt-8">
+      <div className="container mx-auto px-6 lg:px-20 max-w-7xl w-full pt-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="mb-8 text-center"
+          className="mb-6 text-center"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-black mb-4 tracking-tight">
             Tech Stack
@@ -144,7 +145,7 @@ export function Skills() {
         </motion.div>
         
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto mb-6">
           {skills.map((skill, index) => (
             <SkillCard key={skill.name} skill={skill} index={index} />
           ))}
