@@ -4,13 +4,13 @@ import './globals.css'
 import { LenisScroll } from '@/components/animations/LenisScroll'
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Tu Nombre',
-  description: 'Portfolio personal de desarrollo web',
+  title: 'bigo',
+  description: 'web developer portfolio',
   keywords: ['portfolio', 'web developer', 'frontend', 'backend', 'full stack'],
-  authors: [{ name: 'Tu Nombre' }],
+  authors: [{ name: 'juanmabigo' }],
   openGraph: {
-    title: 'Portfolio - Tu Nombre',
-    description: 'Portfolio personal de desarrollo web',
+    title: 'bigo',
+    description: 'web developer portfolio',
     type: 'website',
   },
 }
