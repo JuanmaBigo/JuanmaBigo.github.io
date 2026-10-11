@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>bigo</title>
+  <rect width="64" height="64" rx="14" fill="#000" />
+  <path fill="#fff" fill-rule="evenodd" d="M18 12h9v16c2.6-2.6 5.8-4 9.6-4C44.7 24 50 29.8 50 38.5S44.7 53 36.6 53c-4 0-7.2-1.5-9.8-4.5V52H18V12Zm23 26.5c0-5-2.6-8-6.8-8S27 33.6 27 38.5s3 8 7.2 8 6.8-3 6.8-8Z" />
+</svg>
