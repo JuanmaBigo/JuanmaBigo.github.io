@@ -120,7 +120,7 @@ export function Projects() {
                   <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2 mb-3 md:mb-4 tracking-tight">
                     {currentProject.title}
                   </h3>
-                  <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed font-light">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed font-body">
                     {currentProject.description}
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export function Projects() {
                   {currentProject.tags.map(tag => (
                     <span 
                       key={tag} 
-                      className="px-3 py-1 border border-white/20 rounded-full text-sm text-gray-300 font-light"
+                      className="px-3 py-1 border border-white/20 rounded-full text-sm text-gray-300 font-body"
                     >
                       {tag}
                     </span>
