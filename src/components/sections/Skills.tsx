@@ -106,7 +106,7 @@ function SkillCard({ skill, index }: { skill: typeof skills[0]; index: number })
         {/* Category tag on hover */}
         <div className="absolute -top-2 -right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <span 
-            className="px-2 py-0.5 text-white text-[10px] rounded-full font-light"
+            className="px-2 py-0.5 text-white text-[10px] rounded-full font-body"
             style={{
               backgroundColor: isActive ? '#000000' : '#000000'
             }}
@@ -139,7 +139,7 @@ export function Skills() {
           <h2 className="text-5xl md:text-6xl font-bold text-black mb-4 tracking-tight">
             Tech Stack
           </h2>
-          <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto font-light">
+          <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto font-body">
             Technologies I use to build scalable and performant systems.
           </p>
         </motion.div>
@@ -160,7 +160,7 @@ export function Skills() {
           className="text-center"
         >
           <div className="inline-block px-6 py-3 border border-gray-200 rounded-full">
-            <p className="text-sm text-gray-600 font-light">
+            <p className="text-sm text-gray-600 font-body">
               <span className="font-medium text-black">Specialized in:</span> Golang microservices, event-driven architecture & AI/LLM engineering
             </p>
           </div>

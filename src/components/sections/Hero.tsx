@@ -66,7 +66,7 @@ export function Hero() {
           
           {/* Description */}
           <motion.p 
-            className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light leading-relaxed"
+            className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-body leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
@@ -183,7 +183,7 @@ function StatCard({ number, label }: { number: string; label: string }) {
       <div className="text-3xl md:text-4xl font-semibold text-black mb-1 tracking-tight">
         {count}{number.includes('+') ? '+' : ''}
       </div>
-      <div className="text-xs md:text-sm text-gray-500 font-light">{label}</div>
+      <div className="text-xs md:text-sm text-gray-500 font-body">{label}</div>
     </div>
   )
 }
